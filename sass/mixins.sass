@@ -1,0 +1,53 @@
+// Стандартный transition для hover-анимаций
+@mixin myTransition
+  transition: 0.3s cubic-bezier(0.250, 0.100, 0.250, 1.000)
+
+// Миксим для Font Awesome 5
+@mixin fa
+  font-family: 'Font Awesome 5 Brands','Font Awesome 5 Free'
+
+
+// Миксин замены цвета placeholder у input.
+// Нужно добавить в стилях элемента конструкцию вида @include placeholder(#000)
+@mixin placeholder($color)
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder
+    color: $color
+
+// Миксины для флексов
+@mixin flex-sb
+  display: flex
+  justify-content: space-between
+
+@mixin flex-column-sb
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+@mixin flex-column-сenter
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+
+// Миксины из Bootstrap
+@mixin media-xs
+  @media (max-width: 575.98px)
+    @content
+
+@mixin media-sm
+  @media (max-width: 767.98px)
+    @content
+
+@mixin media-md
+  @media (max-width: 991.98px)
+    @content
+
+@mixin media-lg
+  @media (max-width: 1199.98px)
+    @content
+
+@mixin media-xl
+  @media (min-width: 1200px)
+    @content

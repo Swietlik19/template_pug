@@ -1,0 +1,31 @@
+{
+  "name": "NewProject",
+  "version": "1.0.0",
+  "description": "Gulp project",
+  "main": "index.js",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-concat": "^2.6.0",
+    "gulp-pug": "^3.1.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.2",
+    "jquery": "^3.3.1",
+    "imagemin-pngquant": "^6.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Naiman",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-rigger": "^0.5.8",
+    "gulp-uglify": "^3.0.1"
+  }
+}
